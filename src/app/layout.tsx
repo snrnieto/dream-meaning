@@ -4,6 +4,7 @@ import dynamic from "next/dynamic";
 import { Itim } from "next/font/google";
 import { ComponentType } from "react";
 import { ToasterProps } from "react-hot-toast";
+import { Analytics } from "@vercel/analytics/react";
 
 const inter = Itim({ subsets: ["latin"], weight: "400" });
 
@@ -25,7 +26,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        {children} <Toaster />
+        {children}
+        <Toaster />
+        <Analytics />
       </body>
     </html>
   );
