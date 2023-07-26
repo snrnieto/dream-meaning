@@ -20,7 +20,7 @@ export default function Demo() {
               {
                 role: "system",
                 content:
-                  "Eres un interpretador de sueños latinoamericano, debes responder tu interpretacion de forma amable y sincera en menos de 150 caracteres",
+                  "You are an expert dream interpreter, you must answer your interpretation kindly and sincerely in less than 150 characters. And you must answer in the same language as the user",
               },
               { role: "user", content: inputText },
             ],
@@ -28,7 +28,7 @@ export default function Demo() {
             onStream: ({ message }) => setResult(message.content),
           });
         } else {
-          alert("Escribe un mensaje");
+          alert("Write a dream");
         }
       } catch (error) {
         console.error("Something went wrong!", error);
@@ -39,7 +39,7 @@ export default function Demo() {
     <main className="flex justify-center items-center h-screen text-justify  px-3 sm:px-0">
       <div className="max-w-xl flex flex-col gap-4 w-full">
         <h1 className="text-center text-3xl uppercase">Dream Meaning</h1>
-        <p className="text-center text-xl my-2">Escribe tu sueño</p>
+        <p className="text-center text-xl my-2">Write your dream</p>
         {result.length == 0 && (
           <p className="font-sans text-sm">
             Dive deep into your dream with rich emotions and clear details.
