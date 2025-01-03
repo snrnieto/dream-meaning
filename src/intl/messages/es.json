@@ -9,5 +9,13 @@
     "english": "Ingles",
     "spanish": "Español",
     "italian": "Italiano"
+  },
+  "Home": {
+    "helper": "Describe tu sueño",
+    "subHelper": "Sumérgete en tu sueño con emociones intensas y detalles claros. Descríbelo como si le estuvieras contando a un amigo una escena de una película: ¡haz que cobre vida! Esto ayuda a nuestra IA a analizar y decodificar su verdadero significado.",
+    "forExample": "Por ejemplo, en lugar de decir 'Soñé que volaba', prueba 'Soñé que volaba por las nubes con alas como un águila, sintiéndome eufórico y libre'. La esencia de tu sueño guiará nuestro poderoso análisis.",
+    "placeholder": "Soñé que...",
+    "buttonAnalize": "Analizar mi sueño",
+    "buttonReset": "Analizar otro sueño"
   }
 }

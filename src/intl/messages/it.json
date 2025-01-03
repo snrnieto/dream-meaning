@@ -9,5 +9,13 @@
     "english": "Inglese",
     "spanish": "Spagnolo",
     "italian": "Italiano"
+  },
+  "Home": {
+    "helper": "Descrivi il tuo sogno",
+    "subHelper": "Immergiti nel tuo sogno con emozioni intense e dettagli chiari. Descrivilo come se stessi raccontando a un amico una scena di un film: fallo prendere vita! Questo aiuta la nostra IA ad analizzare e decodificare il suo vero significato.<br /> <br />Ad esempio, invece di dire 'Ho sognato che stavo volando', prova 'Ho sognato che stavo volando tra le nuvole con ali come un'aquila, sentendomi euforico e libero'. L'essenza del tuo sogno guiderà la nostra potente analisi.",
+    "forExample": "Ad esempio, invece di dire 'Ho sognato che stavo volando', prova 'Ho sognato che stavo volando tra le nuvole con ali come un'aquila, sentendomi euforico e libero'. L'essenza del tuo sogno guiderà il nostro potente analisi.",
+    "placeholder": "Ho sognato che...",
+    "buttonAnalyze": "Analizza il mio sogno",
+    "buttonReset": "Analizza un altro sogno"
   }
 }
