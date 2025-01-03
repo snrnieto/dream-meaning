@@ -9,5 +9,13 @@
     "english": "English",
     "spanish": "Spanish",
     "italian": "Italian"
+  },
+  "Home": {
+    "helper": "Describe your dream",
+    "subHelper": "Immerse yourself in your dream with intense emotions and clear details. Describe it as if you were telling a friend a scene from a movie - make it come to life! This helps our AI analyze and decode its true meaning.<br /> <br />For example, instead of saying 'I dreamed that I was flying', try 'I dreamed that I was flying through the clouds with wings like an eagle, feeling elated and free'. The essence of your dream will guide our powerful analysis.",
+    "forExample": "For example, instead of saying 'I dreamed I was flying,' try 'I dreamed I was flying through the clouds with wings like an eagle, feeling elated and free.' The essence of your dream will guide our powerful analysis.",
+    "placeholder": "I dreamed that...",
+    "buttonAnalyze": "Analyze my dream",
+    "buttonReset": "Analyze another dream"
   }
 }
