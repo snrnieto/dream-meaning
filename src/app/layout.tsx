@@ -6,6 +6,7 @@ import { Analytics } from "@vercel/analytics/react";
 import Link from "next/link";
 import { LanguageProvider } from "@/context/LanguageContext";
 import { ChangeLanguages } from "@/components/ChangeLanguages";
+import { BannerAd } from "@/components";
 
 const inter = Itim({ subsets: ["latin"], weight: "400" });
 
@@ -28,9 +29,11 @@ export default async function RootLayout({
       <body className={inter.className}>
         <LanguageProvider>
           <ChangeLanguages />
-          {children}
+
           <Toaster />
           <Analytics />
+          {children}
+          <BannerAd />
         </LanguageProvider>
       </body>
     </html>
