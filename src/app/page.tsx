@@ -48,7 +48,7 @@ export default function Page() {
   }, [router, savedEmail]);
 
   return (
-    <main className="flex items-center justify-center h-screen">
+    <main className="flex items-center justify-center h-[80vh]">
       <div className="gap-8 items-center py-16 px-8 lg:px-20 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 ">
         <img
           className="w-full max-h-[40vh] object-cover rounded-xl block md:hidden mb-4"
