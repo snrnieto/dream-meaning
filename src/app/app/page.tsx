@@ -13,7 +13,7 @@ export default function AppPage() {
   const t = useTranslations("Home");
 
   return (
-    <main className="flex justify-center items-center h-screen text-justify  px-3 sm:px-0">
+    <main className="flex justify-center sm:items-center h-screen text-justify  px-3 sm:px-0">
       <div className="max-w-xl flex flex-col gap-4 w-full">
         <h1 className="text-center text-3xl uppercase">Dream Meaning</h1>
         <p className="text-center text-xl my-2">{t("helper")}</p>

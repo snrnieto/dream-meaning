@@ -1,13 +1,15 @@
 "use client";
 import { useRouter } from "next/navigation";
-import { FormEvent, useState } from "react";
+import { FormEvent, useEffect, useState } from "react";
 import { toast } from "react-hot-toast";
 import { useTranslations } from "next-intl";
+import { useLocalStorage } from "@/hook/useLocalStorage";
 
 export default function Page() {
   const router = useRouter();
   const [email, setEmail] = useState("");
   const t = useTranslations("Landing");
+  const [savedEmail, setSavedEmail] = useLocalStorage("email", null);
 
   function handleSubmitEmail(event: FormEvent<HTMLFormElement>): void {
     event.preventDefault();
@@ -33,9 +35,17 @@ export default function Page() {
     })
       .then((res) => res.json())
       .then((res) => {
+        setSavedEmail(email);
         router.push("/app");
       });
   }
+
+  useEffect(() => {
+    console.log({ savedEmail });
+    if (savedEmail) {
+      router.push("/app");
+    }
+  }, [router, savedEmail]);
 
   return (
     <main className="flex items-center justify-center h-screen">
