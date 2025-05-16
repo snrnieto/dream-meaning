@@ -7,28 +7,34 @@ const atOptions = {
   width: 728,
   params: {},
 };
+
+const srcScript = `//www.highperformanceformat.com/${atOptions.key}/invoke.js`;
+const src2Script = `//pl26653978.profitableratecpm.com/3e/e3/0f/3ee30f2e1f56f49cb08d28644f0ffbea.js`;
 export const BannerAd = () => {
   const banner = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    console.log("Banner");
     const bannerElement = banner.current;
     if (bannerElement) {
-      console.log("Banner2");
       // Create the script elements
       const conf = document.createElement("script");
       const script = document.createElement("script");
+      const scriptBanner = document.createElement("script");
       const body = document.getElementsByTagName("body")[0];
       script.type = "text/javascript";
-      script.src = `//www.highperformanceformat.com/${atOptions.key}/invoke.js`;
+      script.src = src2Script;
+      scriptBanner.type = "text/javascript";
+      scriptBanner.src = srcScript;
       conf.type = "text/javascript";
       conf.text = `atOptions = ${JSON.stringify(
         atOptions
       )}; console.log("script",atOptions);`;
 
-      // Append to the banner container
       body.appendChild(conf);
+
+      // Append to the banner container
       body.appendChild(script);
+      bannerElement.appendChild(scriptBanner);
 
       // Cleanup function
       return () => {

@@ -27,7 +27,6 @@ export default async function RootLayout({
   return (
     <html>
       <head>
-        {" "}
         <meta name="viewport" content="width=device-width" />
       </head>
       <body className={inter.className}>

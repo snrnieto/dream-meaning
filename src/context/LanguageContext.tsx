@@ -46,6 +46,10 @@ export const LanguageProvider = ({ children }: { children: ReactNode }) => {
     getMessage();
   }, [locale]);
 
+  if (!messages) {
+    return null;
+  }
+
   return (
     <LanguageContext.Provider value={{ locale, setLocale }}>
       <NextIntlClientProvider locale={locale} messages={messages}>
