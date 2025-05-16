@@ -55,7 +55,7 @@ export default function AppPage() {
           disabled={!hasStartedConversation && input.length === 0}
           className="border border-white rounded-xl py-2"
         >
-          {hasStartedConversation ? t("buttonReset") : t("buttonAnalize")}
+          {hasStartedConversation ? t("buttonReset") : t("buttonAnalyze")}
         </button>
       </div>
     </main>
