@@ -9,7 +9,8 @@ const atOptions = {
 };
 
 const srcScript = `//www.highperformanceformat.com/${atOptions.key}/invoke.js`;
-const src2Script = `//pl26653978.profitableratecpm.com/3e/e3/0f/3ee30f2e1f56f49cb08d28644f0ffbea.js`;
+const src2Script = `//pl26653978.effectivegatecpm.com/3e/e3/0f/3ee30f2e1f56f49cb08d28644f0ffbea.js`;
+
 export const BannerAd = () => {
   const banner = useRef<HTMLDivElement>(null);
 
@@ -27,7 +28,7 @@ export const BannerAd = () => {
       scriptBanner.src = srcScript;
       conf.type = "text/javascript";
       conf.text = `atOptions = ${JSON.stringify(
-        atOptions
+        atOptions,
       )}; console.log("script",atOptions);`;
 
       body.appendChild(conf);
